@@ -1,0 +1,97 @@
+2017-09-25 13:21:53,350 - INFO - Beginning execution of dms2_bcsubamp in directory /home/adingens
+
+2017-09-25 13:21:53,350 - INFO - Progress is being logged to ./results/codoncounts/BF520-wt-DNA.log
+2017-09-25 13:21:54,877 - INFO - Version information:
+	Time and date: Mon Sep 25 13:21:53 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-25 13:21:54,878 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/BF520c2-Env.fasta
+	alignspecs = ['88,417,40,39', '418,753,39,35', '754,1092,36,39', '1093,1447,35,29', '1407,1758,35,32', '1759,2097,30,36']
+	bclen = 8
+	fastqdir = ./FASTQ_FILES/
+	R2 = None
+	R1trim = [232]
+	R2trim = [185]
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = BF520-wt-DNA
+	R1 = ['BF520-wt-DNA_S8_L001_R1_001.fastq.gz']
+
+2017-09-25 13:21:54,884 - INFO - Read refseq of 2559 codons from ./data/BF520c2-Env.fasta
+2017-09-25 13:21:54,884 - INFO - Reads are in these FASTQ pairs:
+	./FASTQ_FILES/BF520-wt-DNA_S8_L001_R1_001.fastq.gz and ./FASTQ_FILES/BF520-wt-DNA_S8_L001_R2_001.fastq.gz
+
+2017-09-25 13:21:54,884 - INFO - Now parsing read pairs...
+2017-09-25 13:22:08,028 - INFO - Reads parsed so far: 500000
+2017-09-25 13:22:20,974 - INFO - Reads parsed so far: 1000000
+2017-09-25 13:22:33,639 - INFO - Reads parsed so far: 1500000
+2017-09-25 13:22:46,740 - INFO - Reads parsed so far: 2000000
+2017-09-25 13:22:58,229 - INFO - Parsed 2468194 reads, found 861497 unique barcodes.
+2017-09-25 13:22:58,232 - INFO - Summary stats on reads:
+fail filter  low Q barcode    total
+          0            721  2468194
+2017-09-25 13:22:58,232 - INFO - Writing these stats to ./results/codoncounts/BF520-wt-DNA_readstats.csv
+
+2017-09-25 13:22:58,563 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            303581
+2                            162559
+3                            131298
+4                             96809
+5                             66439
+6                             43241
+7                             26181
+8                             14860
+9                              8373
+10                             4265
+11                             2111
+12                             1038
+13                              423
+14                              189
+15                               86
+16                               26
+17                                6
+18                                9
+19                                3
+2017-09-25 13:22:58,563 - INFO - Writing these stats to ./results/codoncounts/BF520-wt-DNA_readsperbc.csv
+
+2017-09-25 13:22:58,564 - INFO - Examining the 861497 barcodes to build and align subamplicons...
+2017-09-25 13:23:13,836 - INFO - Barcodes examined so far: 200000
+2017-09-25 13:23:27,892 - INFO - Barcodes examined so far: 400000
+2017-09-25 13:23:39,793 - INFO - Barcodes examined so far: 600000
+2017-09-25 13:23:46,857 - INFO - Barcodes examined so far: 800000
+2017-09-25 13:23:47,416 - INFO - Examined all barcodes. Summary stats:
+aligned  not alignable  too few reads   total
+ 528925          28991         303581  861497
+2017-09-25 13:23:47,416 - INFO - Writing these stats to ./results/codoncounts/BF520-wt-DNA_bcstats.csv
+
+2017-09-25 13:23:47,433 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/BF520-wt-DNA_codoncounts.csv
+
+2017-09-25 13:23:47,463 - INFO - Successful completion of dms2_bcsubamp

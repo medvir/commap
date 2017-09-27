@@ -1,0 +1,103 @@
+2017-09-25 13:21:53,235 - INFO - Beginning execution of dms2_bcsubamp in directory /home/adingens
+
+2017-09-25 13:21:53,235 - INFO - Progress is being logged to ./results/codoncounts/BF520-M1-112-2-C11-0-17uM.log
+2017-09-25 13:21:54,716 - INFO - Version information:
+	Time and date: Mon Sep 25 13:21:53 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-25 13:21:54,717 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/BF520c2-Env.fasta
+	alignspecs = ['88,417,40,39', '418,753,39,35', '754,1092,36,39', '1093,1447,35,29', '1407,1758,35,32', '1759,2097,30,36']
+	bclen = 8
+	fastqdir = ./FASTQ_FILES/
+	R2 = None
+	R1trim = [232]
+	R2trim = [185]
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = BF520-M1-112-2-C11-0-17uM
+	R1 = ['BF520-M1-112-2-C11-0-17uM_S5_L001_R1_001.fastq.gz']
+
+2017-09-25 13:21:54,724 - INFO - Read refseq of 2559 codons from ./data/BF520c2-Env.fasta
+2017-09-25 13:21:54,724 - INFO - Reads are in these FASTQ pairs:
+	./FASTQ_FILES/BF520-M1-112-2-C11-0-17uM_S5_L001_R1_001.fastq.gz and ./FASTQ_FILES/BF520-M1-112-2-C11-0-17uM_S5_L001_R2_001.fastq.gz
+
+2017-09-25 13:21:54,724 - INFO - Now parsing read pairs...
+2017-09-25 13:22:07,713 - INFO - Reads parsed so far: 500000
+2017-09-25 13:22:20,687 - INFO - Reads parsed so far: 1000000
+2017-09-25 13:22:33,495 - INFO - Reads parsed so far: 1500000
+2017-09-25 13:22:45,772 - INFO - Reads parsed so far: 2000000
+2017-09-25 13:22:58,775 - INFO - Reads parsed so far: 2500000
+2017-09-25 13:23:11,104 - INFO - Reads parsed so far: 3000000
+2017-09-25 13:23:15,164 - INFO - Parsed 3165761 reads, found 712938 unique barcodes.
+2017-09-25 13:23:15,168 - INFO - Summary stats on reads:
+fail filter  low Q barcode    total
+          0            917  3165761
+2017-09-25 13:23:15,168 - INFO - Writing these stats to ./results/codoncounts/BF520-M1-112-2-C11-0-17uM_readstats.csv
+
+2017-09-25 13:23:15,468 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            213115
+2                             43356
+3                             57045
+4                             68843
+5                             73530
+6                             69423
+7                             59117
+8                             46044
+9                             32389
+10                            21365
+11                            13144
+12                             7494
+13                             4050
+14                             2115
+15                             1042
+16                              480
+17                              219
+18                               77
+19                               41
+20                               22
+21                               14
+22                                9
+23                                1
+25                                3
+2017-09-25 13:23:15,469 - INFO - Writing these stats to ./results/codoncounts/BF520-M1-112-2-C11-0-17uM_readsperbc.csv
+
+2017-09-25 13:23:15,469 - INFO - Examining the 712938 barcodes to build and align subamplicons...
+2017-09-25 13:23:33,837 - INFO - Barcodes examined so far: 200000
+2017-09-25 13:23:50,628 - INFO - Barcodes examined so far: 400000
+2017-09-25 13:24:02,929 - INFO - Barcodes examined so far: 600000
+2017-09-25 13:24:04,425 - INFO - Examined all barcodes. Summary stats:
+aligned  not alignable  too few reads   total
+ 472376          27447         213115  712938
+2017-09-25 13:24:04,425 - INFO - Writing these stats to ./results/codoncounts/BF520-M1-112-2-C11-0-17uM_bcstats.csv
+
+2017-09-25 13:24:04,444 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/BF520-M1-112-2-C11-0-17uM_codoncounts.csv
+
+2017-09-25 13:24:04,483 - INFO - Successful completion of dms2_bcsubamp

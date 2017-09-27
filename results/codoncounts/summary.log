@@ -1,0 +1,71 @@
+2017-09-25 13:21:51,721 - INFO - Beginning execution of dms2_batch_bcsubamp in directory /home/adingens
+
+2017-09-25 13:21:51,721 - INFO - Progress is being logged to ./results/codoncounts/summary.log
+2017-09-25 13:21:52,297 - INFO - Version information:
+	Time and date: Mon Sep 25 13:21:51 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-25 13:21:52,297 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts
+	ncpus = 14
+	use_existing = yes
+	refseq = ./data/BF520c2-Env.fasta
+	alignspecs = ['88,417,40,39', '418,753,39,35', '754,1092,36,39', '1093,1447,35,29', '1407,1758,35,32', '1759,2097,30,36']
+	bclen = 8
+	fastqdir = ./FASTQ_FILES/
+	R2 = None
+	R1trim = [232]
+	R2trim = [185]
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	batchfile = ./results/codoncounts/batch.csv
+	summaryprefix = summary
+
+2017-09-25 13:21:52,297 - INFO - Parsing sample info from ./results/codoncounts/batch.csv
+2017-09-25 13:21:52,301 - INFO - Read the following sample information:
+name_other,name,R1
+mut-virus_1,BF520-M1-mock,BF520-M1-mock_S2_L001_R1_001.fastq.gz
+mut-virus_1_PGT151_1ug,BF520-M1-PGT151-1ug,BF520-M1-PGT151-1ug_S7_L001_R1_001.fastq.gz
+mut-virus_1_6.1.G2_0.17uM,BF520-M1-6-1-G2-0-17uM,BF520-M1-6-1-G2-0-17uM_S3_L001_R1_001.fastq.gz
+mut-virus_1_6.1.G2_0.56uM,BF520-M1-6-1-G2-0-56uM,BF520-M1-6-1-G2-0-56uM_S4_L001_R1_001.fastq.gz
+mut-virus_1_112.2.C11_0.17uM,BF520-M1-112-2-C11-0-17uM,BF520-M1-112-2-C11-0-17uM_S5_L001_R1_001.fastq.gz
+mut-virus_1_112.2.C11_0.56uM,BF520-M1-112-2-C11-0-56uM,BF520-M1-112-2-C11-0-56uM_S6_L001_R1_001.fastq.gz
+wt-DNA,BF520-wt-DNA,BF520-wt-DNA_S8_L001_R1_001.fastq.gz
+wt-virus_1,BF520-wt-1-mock,BF520-wt-1-mock_S1_L001_R1_001.fastq.gz
+
+
+2017-09-25 13:21:52,301 - INFO - Running dms2_bcsubamp on all samples using 14 CPUs...
+2017-09-25 13:24:06,535 - INFO - Completed runs of dms2_bcsubamp.
+
+2017-09-25 13:24:06,540 - INFO - Plotting read stats to ./results/codoncounts/summary_readstats.pdf
+2017-09-25 13:24:07,190 - INFO - Plotting barcode stats to ./results/codoncounts/summary_bcstats.pdf
+2017-09-25 13:24:07,706 - INFO - Plotting reads per barcode to ./results/codoncounts/summary_readsperbc.pdf
+2017-09-25 13:24:09,542 - INFO - Plotting count depth to ./results/codoncounts/summary_depth.pdf
+2017-09-25 13:24:22,136 - INFO - Plotting mutation frequencies to ./results/codoncounts/summary_mutfreq.pdf
+2017-09-25 13:24:34,898 - INFO - Plotting average frequencies of codon mutation types to ./results/codoncounts/summary_codonmuttypes.pdf, writing the data to ./results/codoncounts/summary_codonmuttypes.csv
+2017-09-25 13:24:46,437 - INFO - Plotting average frequencies of nucleotide changes per codon mutation to ./results/codoncounts/summary_codonntchanges.pdf
+2017-09-25 13:24:58,105 - INFO - Plotting frequencies of nucleotide changes in 1-nucleotide mutations to ./results/codoncounts/summary_singlentchanges.pdf
+2017-09-25 13:25:09,922 - INFO - Plotting fraction of mutations seen less than some number of times to ./results/codoncounts/summary_cumulmutcounts.pdf
+2017-09-25 13:25:31,905 - INFO - Successful completion of dms2_batch_bcsubamp

@@ -1,0 +1,56 @@
+2017-09-26 13:29:03,806 - INFO - Beginning execution of dms2_logoplot in directory /home/adingens
+
+2017-09-26 13:29:03,806 - INFO - Progress is being logged to ./results/diffsel/6-1-G2-0-56uM.log
+2017-09-26 13:29:04,440 - INFO - Version information:
+	Time and date: Tue Sep 26 13:29:03 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-26 13:29:04,440 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel
+	ncpus = -1
+	use_existing = yes
+	prefs = None
+	diffsel = ./results/diffsel/6-1-G2-0-56uM_mutdiffsel.csv
+	name = 6-1-G2-0-56uM
+	nperline = 83
+	numberevery = 10
+	excludestop = no
+	stringency = 1
+	restrictdiffsel = positive
+	diffselrange = None
+	sortsites = yes
+	mapmetric = functionalgroup
+	colormap = jet
+	overlay1 = ['./results/diffsel/6-1-G2-0-56uM_mutdiffsel.csv', 'wildtype', 'wildtype']
+	overlay2 = None
+	overlay3 = None
+	underlay = yes
+	overlaycolormap = jet
+	letterheight = 1
+	sepline = no
+
+2017-09-26 13:29:04,440 - INFO - Reading diffsel from file ./results/diffsel/6-1-G2-0-56uM_mutdiffsel.csv...
+2017-09-26 13:29:04,453 - INFO - Read data for 661 sites.
+
+2017-09-26 13:29:04,507 - INFO - Reading overlay for wildtype from ./results/diffsel/6-1-G2-0-56uM_mutdiffsel.csv...
+2017-09-26 13:29:04,572 - INFO - Read overlay for 661 sites.
+
+2017-09-26 13:29:04,572 - INFO - Making logo plot ./results/diffsel/6-1-G2-0-56uM_diffsel.pdf...
+2017-09-26 13:29:11,937 - INFO - Successfully created logo plot.
+
+2017-09-26 13:29:11,937 - INFO - Successful completion of dms2_logoplot

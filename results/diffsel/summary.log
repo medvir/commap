@@ -1,0 +1,45 @@
+2017-09-26 12:23:06,714 - INFO - Beginning execution of dms2_batch_diffsel in directory /home/adingens
+
+2017-09-26 12:23:06,714 - INFO - Progress is being logged to ./results/diffsel/summary.log
+2017-09-26 12:23:07,333 - INFO - Version information:
+	Time and date: Tue Sep 26 12:23:06 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-26 12:23:07,333 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel
+	ncpus = -1
+	use_existing = yes
+	indir = ./results/renumberedcounts
+	chartype = codon_to_aa
+	excludestop = yes
+	pseudocount = 5
+	mincount = 0
+	batchfile = ./results/diffsel/batch.csv
+	summaryprefix = summary
+
+2017-09-26 12:23:07,333 - INFO - Parsing info from ./results/diffsel/batch.csv
+2017-09-26 12:23:07,338 - INFO - Read the following sample information:
+name,sel,mock,err
+PGT151-1ug,BF520-M1-PGT151-1ug,BF520-M1-mock,BF520-wt-1-mock
+6-1-G2-0-17uM,BF520-M1-6-1-G2-0-17uM,BF520-M1-mock,BF520-wt-1-mock
+6-1-G2-0-56uM,BF520-M1-6-1-G2-0-56uM,BF520-M1-mock,BF520-wt-1-mock
+112-2-C11-0-17uM,BF520-M1-112-2-C11-0-17uM,BF520-M1-mock,BF520-wt-1-mock
+112-2-C11-0-56uM,BF520-M1-112-2-C11-0-56uM,BF520-M1-mock,BF520-wt-1-mock
+
+
+2017-09-26 12:23:07,339 - INFO - Output summary files already exist and '--use_existing' is 'yes', so exiting with no further action.

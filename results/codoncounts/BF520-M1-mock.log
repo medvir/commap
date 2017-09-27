@@ -1,0 +1,90 @@
+2017-09-25 13:21:53,417 - INFO - Beginning execution of dms2_bcsubamp in directory /home/adingens
+
+2017-09-25 13:21:53,417 - INFO - Progress is being logged to ./results/codoncounts/BF520-M1-mock.log
+2017-09-25 13:21:54,890 - INFO - Version information:
+	Time and date: Mon Sep 25 13:21:53 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-25 13:21:54,890 - INFO - Parsed the following arguments:
+	outdir = ./results/codoncounts
+	ncpus = -1
+	use_existing = yes
+	refseq = ./data/BF520c2-Env.fasta
+	alignspecs = ['88,417,40,39', '418,753,39,35', '754,1092,36,39', '1093,1447,35,29', '1407,1758,35,32', '1759,2097,30,36']
+	bclen = 8
+	fastqdir = ./FASTQ_FILES/
+	R2 = None
+	R1trim = [232]
+	R2trim = [185]
+	chartype = codon
+	maxmuts = 4
+	minq = 15
+	minreads = 2
+	minfraccall = 0.95
+	minconcur = 0.75
+	purgeread = 0
+	purgebc = 0
+	bcinfo = False
+	name = BF520-M1-mock
+	R1 = ['BF520-M1-mock_S2_L001_R1_001.fastq.gz']
+
+2017-09-25 13:21:54,896 - INFO - Read refseq of 2559 codons from ./data/BF520c2-Env.fasta
+2017-09-25 13:21:54,897 - INFO - Reads are in these FASTQ pairs:
+	./FASTQ_FILES/BF520-M1-mock_S2_L001_R1_001.fastq.gz and ./FASTQ_FILES/BF520-M1-mock_S2_L001_R2_001.fastq.gz
+
+2017-09-25 13:21:54,897 - INFO - Now parsing read pairs...
+2017-09-25 13:22:07,773 - INFO - Reads parsed so far: 500000
+2017-09-25 13:22:21,315 - INFO - Reads parsed so far: 1000000
+2017-09-25 13:22:33,837 - INFO - Reads parsed so far: 1500000
+2017-09-25 13:22:40,650 - INFO - Parsed 1785323 reads, found 879466 unique barcodes.
+2017-09-25 13:22:40,653 - INFO - Summary stats on reads:
+fail filter  low Q barcode    total
+          0            544  1785323
+2017-09-25 13:22:40,653 - INFO - Writing these stats to ./results/codoncounts/BF520-M1-mock_readstats.csv
+
+2017-09-25 13:22:40,980 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                            419745
+2                            206568
+3                            134054
+4                             70746
+5                             31122
+6                             11663
+7                              3966
+8                              1166
+9                               327
+10                               78
+11                               23
+12                                6
+13                                2
+2017-09-25 13:22:40,980 - INFO - Writing these stats to ./results/codoncounts/BF520-M1-mock_readsperbc.csv
+
+2017-09-25 13:22:40,980 - INFO - Examining the 879466 barcodes to build and align subamplicons...
+2017-09-25 13:22:54,075 - INFO - Barcodes examined so far: 200000
+2017-09-25 13:23:05,865 - INFO - Barcodes examined so far: 400000
+2017-09-25 13:23:15,514 - INFO - Barcodes examined so far: 600000
+2017-09-25 13:23:21,146 - INFO - Barcodes examined so far: 800000
+2017-09-25 13:23:21,772 - INFO - Examined all barcodes. Summary stats:
+aligned  not alignable  too few reads   total
+ 424809          34912         419745  879466
+2017-09-25 13:23:21,773 - INFO - Writing these stats to ./results/codoncounts/BF520-M1-mock_bcstats.csv
+
+2017-09-25 13:23:21,788 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/BF520-M1-mock_codoncounts.csv
+
+2017-09-25 13:23:21,818 - INFO - Successful completion of dms2_bcsubamp

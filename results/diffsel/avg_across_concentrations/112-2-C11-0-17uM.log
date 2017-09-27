@@ -1,0 +1,70 @@
+2017-09-26 12:25:10,322 - INFO - Beginning execution of dms2_diffsel in directory /home/adingens
+
+2017-09-26 12:25:10,322 - INFO - Progress is being logged to ./results/diffsel/avg_across_concentrations/112-2-C11-0-17uM.log
+2017-09-26 12:25:11,894 - INFO - Version information:
+	Time and date: Tue Sep 26 12:25:10 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-26 12:25:11,894 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel/avg_across_concentrations
+	ncpus = 3
+	use_existing = yes
+	indir = ./results/renumberedcounts
+	chartype = codon_to_aa
+	excludestop = yes
+	pseudocount = 5.0
+	mincount = 0
+	name = 112-2-C11-0-17uM
+	sel = BF520-M1-112-2-C11-0-17uM
+	mock = BF520-M1-mock
+	err = BF520-wt-1-mock
+
+2017-09-26 12:25:11,894 - INFO - Reading selected sample counts from BF520-M1-112-2-C11-0-17uM
+2017-09-26 12:25:11,903 - INFO - Reading mock-selected sample counts from BF520-M1-mock
+2017-09-26 12:25:11,911 - INFO - Reading error-control sample counts from BF520-wt-1-mock
+2017-09-26 12:25:11,918 - INFO - Computing mutdiffsel...
+2017-09-26 12:25:16,343 - INFO - Mutations with largest mutdiffsel:
+site wildtype mutation  mutdiffsel
+561        A        T        2.47
+610        W        R        2.23
+316        A        V        2.10
+602        L        I        1.98
+319        T        I        1.93
+684        I        M        1.92
+637        N        K        1.87
+665        K        R        1.79
+318        A        V        1.64
+604        C        Y        1.59
+
+2017-09-26 12:25:16,344 - INFO - Writing to ./results/diffsel/avg_across_concentrations/112-2-C11-0-17uM_mutdiffsel.csv
+2017-09-26 12:25:16,379 - INFO - Computing sitediffsel...
+2017-09-26 12:25:16,396 - INFO - Sites with largest absolute sitediffsel:
+site  abs_diffsel  positive_diffsel  negative_diffsel  max_diffsel  min_diffsel
+660        11.56              3.01             -8.55         0.68        -1.43
+665        10.70              5.54             -5.16         1.79        -1.56
+633        10.67              1.79             -8.87         0.97        -1.58
+694        10.28              5.26             -5.02         1.12        -1.39
+649         9.97              2.17             -7.80         0.84        -1.81
+684         9.90              6.06             -3.84         1.92        -1.07
+677         9.81              3.79             -6.02         0.80        -0.94
+657         9.49              3.66             -5.84         1.23        -0.95
+641         9.40              4.63             -4.77         1.14        -1.48
+624         9.28              6.78             -2.50         1.15        -0.68
+
+2017-09-26 12:25:16,397 - INFO - Writing to ./results/diffsel/avg_across_concentrations/112-2-C11-0-17uM_sitediffsel.csv
+2017-09-26 12:25:16,403 - INFO - Successful completion of dms2_diffsel

@@ -1,0 +1,53 @@
+2017-09-26 14:48:24,029 - INFO - Beginning execution of dms2_logoplot in directory /home/adingens
+
+2017-09-26 14:48:24,029 - INFO - Progress is being logged to ./results/diffsel/avg_across_concentrations/6-1-G2_annotated.log
+2017-09-26 14:48:24,661 - INFO - Version information:
+	Time and date: Tue Sep 26 14:48:24 2017
+	Platform: Linux-4.4.0-96-generic-x86_64-with-debian-stretch-sid
+	Python version: 3.6.1 |Continuum Analytics, Inc.| (default, May 11 2017, 13:09:58)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+	dms_tools2 version: 2.0a0
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.1.2
+	jupyter version: 1.0.0
+
+2017-09-26 14:48:24,661 - INFO - Parsed the following arguments:
+	outdir = ./results/diffsel/avg_across_concentrations
+	ncpus = -1
+	use_existing = yes
+	prefs = None
+	diffsel = ./results/diffsel/avg_across_concentrations/summary_6-1-G2-meanmutdiffsel.csv
+	name = 6-1-G2_annotated
+	nperline = 83
+	numberevery = 10
+	excludestop = no
+	stringency = 1
+	restrictdiffsel = positive
+	diffselrange = None
+	sortsites = yes
+	mapmetric = functionalgroup
+	colormap = jet
+	overlay1 = ['./results/diffsel/avg_across_concentrations/summary_6-1-G2-meanmutdiffsel.csv', 'wildtype', 'wildtype']
+	overlay2 = ['./data/6_2_A12_JRCSF_logbase2.csv', 'JRCSF', 'Log2 fold change JRCSF 6_2_A12']
+	overlay3 = None
+	underlay = yes
+	overlaycolormap = YlOrRd
+	letterheight = 1
+	sepline = no
+
+2017-09-26 14:48:24,661 - ERROR - Terminating dms2_logoplot with ERROR.
+Traceback (most recent call last):
+  File "/home/adingens/dms_tools2/scripts/dms2_logoplot", line 67, in main
+    assert dms_tools2.parseargs.checkName(args['name'], 'name')
+  File "/home/adingens/dms_tools2/dms_tools2/parseargs.py", line 58, in checkName
+    "{2}".format(nametype, name, ', '.join(illegal_chars)))
+ValueError: name 6-1-G2_annotated contains following illegal characters: _
